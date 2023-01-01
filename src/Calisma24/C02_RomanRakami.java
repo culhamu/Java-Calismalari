@@ -22,53 +22,22 @@ public class C02_RomanRakami {
 
 
     }
-
-    public static int convertToInt(String romanNumber) {
-        int result = 0;
-
-        for (int i = 0; i < romanNumber.length(); i++) {
-            char ch = romanNumber.charAt(i);
-            int value = getIntValue(ch);
-
-            if (i + 1 < romanNumber.length()) {
-                char nextCh = romanNumber.charAt(i + 1);
-                int nextValue = getIntValue(nextCh);
-
-                if (value < nextValue) {
-                    result -= value;
-                } else {
-                    result += value;
-                }
-            } else {
-                result += value;
+    public static int convertToInt(String s) {
+        int ans = 0, num = 0;
+        for (int i = s.length()-1; i >= 0; i--) {
+            switch(s.charAt(i)) {
+                case 'I': num = 1; break;
+                case 'V': num = 5; break;
+                case 'X': num = 10; break;
+                case 'L': num = 50; break;
+                case 'C': num = 100; break;
+                case 'D': num = 500; break;
+                case 'M': num = 1000; break;
             }
+            if (4 * num < ans) ans -= num;
+            else ans += num;
         }
-        return result;
-
-
-    }
-
-    public static int getIntValue(char ch) {
-        // burada verilen roman rakamı karakterine karşılık gelen tamsayı değerini döndüreceğiz
-
-        switch (ch) {
-            case 'I':
-                return 1;
-            case 'V':
-                return 5;
-            case 'X':
-                return 10;
-            case 'L':
-                return 50;
-            case 'C':
-                return 100;
-            case 'D':
-                return 500;
-            case 'M':
-                return 1000;
-            default:
-                return 0;
-        }
+        return ans;
     }
 
 
