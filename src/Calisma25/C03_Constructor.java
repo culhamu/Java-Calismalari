@@ -74,7 +74,7 @@ Puanları ve kazananı ekrana yazdırın
             } else if (oyuncu2Puan > oyuncu1Puan) {
                 System.out.println("Oyuncu 2 kazandı !");
             } else {
-                System.out.println("oyun bitti!");
+                System.out.println("Berabere!");
             }
         }
 
