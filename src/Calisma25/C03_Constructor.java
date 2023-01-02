@@ -32,11 +32,11 @@ Puanları ve kazananı ekrana yazdırın
 
         public void play() {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Oyunca 1, Lütfen bir kelime giriniz :");
+            System.out.println("Oyuncu 1, Lütfen bir kelime giriniz :");
             kelime = scanner.nextLine();
             System.out.println("Oyuncu 2, girilen " + kelime + " yi onaylıyor musun (e/h)");
             String cevap = scanner.nextLine();
-            if (cevap.equalsIgnoreCase("e")) {
+            if (cevap.equalsIgnoreCase("h")) {
                 System.out.println("Geçersiz kelime, oyunu 1. oyuncu kazandı");
                 oyuncu1Puan += kelime.length();
                 return;

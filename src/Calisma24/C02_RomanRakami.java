@@ -18,11 +18,11 @@ public class C02_RomanRakami {
          12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
          */
         int I = 1, IV = 4, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000;
-        System.out.println(convertToInt("MCMIV"));
+        System.out.println(tamsayiCevir("MCMIV"));
 
 
     }
-    public static int convertToInt(String s) {
+    public static int tamsayiCevir(String s) {
         int ans = 0, num = 0;
         for (int i = s.length()-1; i >= 0; i--) {
             switch(s.charAt(i)) {
