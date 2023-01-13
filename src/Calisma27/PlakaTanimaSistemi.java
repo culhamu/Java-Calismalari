@@ -59,11 +59,7 @@ Bu odevin hedefleri
     }
 
     private static void aracSorgu(Object araclar) {
-        for(Object w:araclar) {
-            if (w.equals(Kamera.plakaNumarasiOkuma())){
 
-                System.out.println("araba çalıntı");
-            }
-        }
+
     }
 }
