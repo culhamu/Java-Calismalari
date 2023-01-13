@@ -30,7 +30,7 @@ Puanları ve kazananı ekrana yazdırın
             this.oyuncu2Puan = 0;
         }
 
-        public void play() {
+        public void basla() {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Oyuncu 1, Lütfen bir kelime giriniz :");
             kelime = scanner.nextLine();
@@ -81,8 +81,8 @@ Puanları ve kazananı ekrana yazdırın
 
 
         public static void main(String[] args) {
-           C03_Constructor game = new C03_Constructor();
-            game.play();
+           C03_Constructor oyun = new C03_Constructor();
+            oyun.basla();
         }
 
 
