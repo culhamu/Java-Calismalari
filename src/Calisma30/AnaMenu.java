@@ -40,7 +40,6 @@ void anaMenu() throws InterruptedException {
             System.out.println("HATALI GİRİŞ YAPTINIZ");
             Thread.sleep(2000);
             anaMenu();
-            Collection
         }
     }
 }
