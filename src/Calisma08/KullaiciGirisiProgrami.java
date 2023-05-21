@@ -1,6 +1,8 @@
 package Calisma08;
 
 import javax.security.sasl.SaslClient;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class KullaiciGirisiProgrami {
@@ -16,5 +18,8 @@ public class KullaiciGirisiProgrami {
         System.out.println("Kullanıcı sistemine hoşgeldiniz");
         System.out.println("*********************************");
 
+        String text = "Hello, World!";
+        StringBuilder sb = new StringBuilder(text);
+        System.out.println(sb.reverse());
     }
 }
